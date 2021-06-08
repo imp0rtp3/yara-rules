@@ -30,9 +30,9 @@ rule roothelper_obfuscated
 		// Function names
 		$f1 = "rmarg"
 		$f2 = "chkenv"
-		$f3 = "untraceable"
+		$f3 = "untraceable" // only in debug mode
 		$f4 = "arc4"
-		$f5 = "xsh" fullword
+		$f5 = "xsh\x00" 
 		$f6 = "stte"
 		$f7 = "with_file"
 
