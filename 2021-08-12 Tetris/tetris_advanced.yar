@@ -1,6 +1,12 @@
 
 rule apt_CN_Tetris_JS_advanced_1
 {
+	meta:
+		author      = "@imp0rtp3"
+		description = "Unique code from Jetriz, Swid & Jeniva of the Tetris framework"
+		reference   = "https://imp0rtp3.wordpress.com/2021/08/12/tetris"
+
+
 	strings:
 		$a1 = "var a0_0x"
 		$b1 = /a0_0x[a-f0-9]{4}\('0x[0-9a-f]{1,3}'\)/
@@ -41,6 +47,11 @@ rule apt_CN_Tetris_JS_advanced_1
 
 rule apt_CN_Tetris_JS_advanced_2
 {
+	meta:
+		author      = "@imp0rtp3"
+		description = "Strings used by Jetriz, Swid & Jeniva of the Tetris framework"
+		reference   = "https://imp0rtp3.wordpress.com/2021/08/12/tetris"
+
 	strings:
 		$a1 = "SFRNTEFsbENvbGxlY3Rpb24=" // '#Socket receive,'
 		$a2 = "Y2FuY2VsYWJsZQ==" // '#socket receive,'
@@ -358,7 +369,13 @@ rule apt_CN_Tetris_JS_advanced_2
 
 rule apt_CN_Tetrisplugins_JS    
 {
+	meta:
+		author      = "@imp0rtp3"
+		description = "Code and strings of plugins from the Tetris framework loaded by Swid"
+		reference   = "https://imp0rtp3.wordpress.com/2021/08/12/tetris"
+
 	strings:
+
 
 		// Really unique strings
 		$a1 = "this.plugin = plugin; // 自动运行"
