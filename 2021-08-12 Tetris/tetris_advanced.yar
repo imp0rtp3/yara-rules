@@ -204,8 +204,8 @@ rule apt_CN_Tetris_JS_advanced_2
 		$a149 = "Y2FuY2Vs" // 'zh-mo'
 		$a150 = "cmVzdWx0TmFtZQ==" // 'zh-tw'
 		$a151 = "YXBwbGljYXRpb24vbW96aWxsYS1ucHFpaG9vcXVpY2tsb2dpbg==" // '{}.constructor("return this")( )'
-		$a152 = "YXJn" // '© 2020 Denis Pushkarev (zloirock.ru)'
-		$a153 = "U3ltYm9sIGlzIG5vdCBhIGNvbnN0cnVjdG9yIQ==" // '不支持FileReader'
+		$a152 = "YXJn" // ' 2020 Denis Pushkarev (zloirock.ru)'
+		$a153 = "U3ltYm9sIGlzIG5vdCBhIGNvbnN0cnVjdG9yIQ==" // 'FileReader'
 		$b1 = "#Socket receive,"
 		$b2 = "#socket receive,"
 		$b3 = "'#task'"
@@ -356,8 +356,8 @@ rule apt_CN_Tetris_JS_advanced_2
 		$b149 = "zh-mo"
 		$b150 = "zh-tw"
 		$b151 = "{}.constructor(\"return this\")( )"
-		$b152 = "© 2020 Denis Pushkarev (zloirock.ru)"
-		$b153 = "不支持FileReader"
+		$b152 = "\xc2\xa9 2020 Denis Pushkarev (zloirock.ru)"
+		$b153 = "\xE4\xB8\x8D\xE6\x94\xAF\xE6\x8C\x81FileReader"
 
 	condition:
 		filesize < 1000000 and (
@@ -378,7 +378,7 @@ rule apt_CN_Tetrisplugins_JS
 
 
 		// Really unique strings
-		$a1 = "this.plugin = plugin; // 自动运行"
+		$a1 = "this.plugin = plugin; // \xE8\x87\xAA\xE5\x8A\xA8\xE8\xBF\x90\xE8\xA1\x8C"
 		$a2 = "[Success]用户正在使用\\x20Tor\\x20网络"
 		$a3 = "(0xbb8);this['socketWatcher'](0xbb9);this["
 		$a4 = "a2869674571f77b5a0867c3d71db5856"
@@ -427,7 +427,7 @@ rule apt_CN_Tetrisplugins_JS
 		$e4 = "http://bn6kma5cpxill4pe.onion/static/images/tor-logo1x.png" base64
 		$e5 = "/public/dependence/jquery" base64
 		$e6 = "\x20\x22*\x22)\x0a\x20\x20}\x0a\x20\x20document.documentElement.appendChild(" base64
-		$e7 = "[Success]用户正在使用\x20Tor\x20网络" base64
+		$e7 = "[Success]\xE7\x94\xA8\xE6\x88\xB7\xE6\xAD\xA3\xE5\x9C\xA8\xE4\xBD\xBF\xE7\x94\xA8\x5C\x5C\x78\x32\x30\x54\x6F\x72" base64
 		$e8 = "\x0a\x20\x20var\x20data\x20=\x20{}\x0a\x20\x20window.c\x20=\x200\x0a\x20\x20script2\x20=\x20document.createElement(\x22script\x22)\x0a\x20\x20script2.async\x20=\x20true\x0a\x20\x20script2.src\x20=\x20\x22"  base64
 		$e9 = "{isPluginCallback:\x20true,\x20data,\x20plugin:\x20" base64
 		
