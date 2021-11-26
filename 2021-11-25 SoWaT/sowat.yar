@@ -28,8 +28,8 @@ rule apt_CN_31_sowat_strings
 		$b4 = "192.168." fullword
 		$b5 = "rm %s " fullword
 		$b6 = "ipecho.net" fullword
-		$b7 = "Host: ipecho.net\r\n" 
-		$b8 = "send errno: %d\n" fullword
+		$b7 = "Host: ipecho.net\x0d\x0a" 
+		$b8 = "send errno: %d\x0a" fullword
 		$b9 = "exit 0" fullword
 		
 		// Likely deleted in next versions
@@ -37,13 +37,13 @@ rule apt_CN_31_sowat_strings
 		$b11 = "malloc err" fullword
 		
 	condition:
-		(uint32(0) == 0x464c457f) and
+		uint32(0) == 0x464c457f and
 		filesize < 2MB and
 		(
 			9 of ($b*) or
 			3 of ($a*) or
 			( 
-				6 of (b*) and 
+				6 of ($b*) and 
 				any of ($a*)
 			) or (
 				3 of ($b*) and 
